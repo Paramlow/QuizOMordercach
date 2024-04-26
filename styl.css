@@ -1,0 +1,81 @@
+div {
+	 background-color: #575B83;
+	 font-family: Georgia, serif;
+	 font-size:30px;
+	 color: #D690B9;
+	 text-shadow: -1px 0 #784A65, 0 1px #784A65, 1px 0 #784A65, 0 -1px #784A65;
+}
+
+img {
+height:300px;
+width:300px;
+border: 5px solid #AFE399;
+border-radius: 10px 10px 10px 10px;
+margin:7px;
+}
+
+
+h1 {
+	color:#AFE399;
+	text-shadow: 2px 2px #5F8250;
+	font-family:Georgia;
+	text-align:center;
+	 animation: h1 2s ease-in-out infinite alternate;
+}
+h3,h4 {
+	color:#AFE399;
+	text-shadow: 2px 2px #373A4E;
+	font-family:Georgia;
+	text-align:center;
+}
+
+.div1 {
+  border: 2px solid #9ECE8A;
+  outline: #8A90C1 solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+  height: 450px;
+  
+}
+
+.div2 {
+  border: 2px solid #9ECE8A;
+  outline: #8A90C1 solid 10px;
+  margin: auto;  
+  padding: 20px;
+  text-align: center;
+  text-shadow: -1px 0 #784A65, 0 1px #784A65, 1px 0 #784A65, 0 -1px #784A65;
+	color: #D690B9;
+}
+
+button {
+  border: 1px solid #373A4E;
+  color: #373A4E;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color: #AFE399;
+ transition: background-color 0.3s ease;
+ margin: 7px;
+}
+
+button:hover {
+  background-color: #D690B9;
+  color: white;
+  border: 2px dashed #5A3B4E;
+}
+
+@-webkit-keyframes h1 {
+  from {
+    text-shadow: 0 0 10px #9ECE8A, 0 0 20px #9ECE8A, 0 0 30px #5F8350 0 0 40px #5F8350, 0 0 50px #5F8350, 0 0 60px #5F8350, 0 0 70px #5F8350
+  }
+  to {
+    text-shadow: 0 0 20px #9ECE8A, 0 0 30px #4A6240, 0 0 40px #4A6240, 0 0 50px #4A6240, 0 0 60px #4A6240, 0 0 70px #4A6240, 0 0 80px #4A6240;
+  }
+}
+
