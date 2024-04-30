@@ -12,6 +12,11 @@ width:300px;
 border: 5px solid #AFE399;
 border-radius: 10px 10px 10px 10px;
 margin:7px;
+box-shadow: 10px 10px;
+}
+
+#ciekawostka {
+	
 }
 
 
@@ -57,7 +62,7 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+
   cursor: pointer;
   background-color: #AFE399;
  transition: background-color 0.3s ease;

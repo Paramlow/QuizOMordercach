@@ -176,6 +176,31 @@ function wyswietlBiezacePytanie() {
         elementOdpowiedzi.appendChild(przycisk); 
     }
 }
-
+let ciekawostkaOtwarta = false;
+function pojawCiekawostke() {
+	const bt = document.getElementById("ciekawostka")
+	console.log("click")
+	const ciek = document.getElementById("div3");
+	if (ciekawostkaOtwarta) {
+		bt.textContent = "Wciśnij aby zobaczyć ciekawostkę!"
+		ciekawostkaOtwarta = false;
+		ciek.innerHTML = ""
+		console.log("Ciekawstka zamkneita")
+	}
+	else {
+		bt.textContent = "Wciśnij aby zamknąć ciekawostkę!"
+		console.log("Ciekawstka otwarta")
+		ciekawostkaOtwarta = true;
+		ciek.innerHTML = "<h3> <i><u>Ciekawostka!</u></i> </h3><h4> Wielokrotni Mordercy (Typy) </h4><p> <b> seryjny  morderca </b> – osoba, która popełniła co najmniej 3 zabójstwa w dłuższym czasie z przerwami między nimi. W czasie tych przerw mordercy wydają się całkiem normalni.Stan taki amerykańscy psychologowie Hervey Cleckley i Robert Hare nazwali „maską zdrowego umysłu” (ang. „The Mask of Sanity”). W tym wypadku dodatkowo mogą, lecz nie muszą występować przestępstwa na tle seksualnym. </p><p> <b> masowy morderca </b> – osoba, która popełnia wielokrotne zabójstwa w pojedynczym wydarzeniu i w jednym miejscu. Mordercy z tej grupy często popełniają samobójstwo, dlatego wiedza na temat stanu ich psychiki i przyczyn dokonania przestępstwa często jest tylko spekulowana. Masowi mordercy, którzy zostali ujęci przez policję, twierdzą czasami, że nie pamiętają dobrze całego zdarzenia.</p><p> <b> szalony morderca </b> – dokonuje wielokrotnych zabójstw w różnych miejscach, w czasie od kilku godzin do kilku dni. W przeciwieństwie do seryjnych morderców, szaleni mordercy nie powracają do normalnego zachowania między zbrodniami.</p>"
+		for(let i = 0; i <= 60; i++) {
+			setTimeout(function(){
+				window.scrollBy(0, 10);
+			}, 120);
+		}
+	}
+	
+	
+}
+document.getElementById("ciekawostka").addEventListener("click", () => pojawCiekawostke());
 // Wywołanie funkcji do wyświetlania pierwszego pytania
 wyswietlBiezacePytanie();
